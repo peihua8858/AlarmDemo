@@ -40,7 +40,8 @@ class MainActivity : ComponentActivity() {
                     rememberMultiplePermissionsState(
                         listOf(
                             android.Manifest.permission.SET_ALARM,
-                            android.Manifest.permission.ACCESS_NOTIFICATION_POLICY
+                            android.Manifest.permission.ACCESS_NOTIFICATION_POLICY,
+                            "com.android.alarm.permission.READ_ALARMS"
                         )
                     )
                 if (state.allPermissionsGranted) {
