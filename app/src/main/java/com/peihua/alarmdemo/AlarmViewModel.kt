@@ -99,8 +99,8 @@ class AlarmViewModel : ViewModel() {
     fun addAlarm(context: Context) {
         val alarmManager = AlarmApplication.instance.getSystemService(AlarmManager::class.java)
         //添加一个闹钟
-//        val intent = Intent(context, AlarmReceiver::class.java)
-        val intent = Intent("android.intent.action.DEMO_ALARM_RECEIVER")
+        val intent = Intent(context, AlarmReceiver::class.java)
+//        val intent = Intent("android.intent.action.DEMO_ALARM_RECEIVER")
         val pendingIntent = PendingIntent.getBroadcast(
             context, 0, intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE

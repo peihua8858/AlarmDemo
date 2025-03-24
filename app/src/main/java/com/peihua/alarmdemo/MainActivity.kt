@@ -102,10 +102,10 @@ class MainActivity : ComponentActivity() {
                             .background(Color.White)) {
                             IconButton(onClick = {
                                 dLog { "alarmClockInfo>>>>>click add alarm start" }
-//                                setAlarm.launchMultiplePermissionRequest()
+                                setAlarm.launchMultiplePermissionRequest()
                                 state.launchMultiplePermissionRequest()
                                 viewModel.addEvent()
-//                                viewModel.addAlarm(this@MainActivity)
+                                viewModel.addAlarm(this@MainActivity)
 //                                showDialog.value = true
                             }) {
                                 Icon(imageVector = Icons.Default.Add, contentDescription = "")
