@@ -18,16 +18,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
-      release{
-          storeFile  file("../keystores/KeyStores")
-          storePassword  "testkey"
-          keyAlias  "testkey"
-          keyPassword  "testkey"
-          enableV1Signing  true
-          enableV2Signing  true
-          enableV3Signing  true
-          enableV4Signing  true
-      }
+        release {
+            storeFile file("../keystores/KeyStores")
+            storePassword "testkey"
+            keyAlias "testkey"
+            keyPassword "testkey"
+            enableV1Signing true
+            enableV2Signing true
+            enableV3Signing true
+            enableV4Signing true
+        }
     }
     buildTypes {
         release {
@@ -36,7 +36,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            signingConfig =  signingConfigs.release
+            signingConfig = signingConfigs.release
             minifyEnabled = false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 

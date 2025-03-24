@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
-private const val STACK_TRACE_INDEX = 6
+private const val STACK_TRACE_INDEX = 5
 
 @Composable
 fun writeLog(tagStr: String, log: String) {
