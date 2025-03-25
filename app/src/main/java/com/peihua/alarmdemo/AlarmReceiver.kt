@@ -48,7 +48,7 @@ class AlarmReceiver : BroadcastReceiver() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         // 创建通知
-      val manager=  context.getSystemService(NotificationManager::class.java)!!
+        val manager=  context.getSystemService(NotificationManager::class.java)!!
         //创建通道
         if (manager.getNotificationChannel("default") == null) {
             manager.createNotificationChannel(
